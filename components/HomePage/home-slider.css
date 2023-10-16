@@ -59,12 +59,12 @@
 
 .accordion-item {
     height: 450px;
-    width: 10% !important;
+    /* width: 10% !important; */
 }
 
-.accordion-item:hover{
+/* .accordion-item:hover{
     width: 80% !important;
-}
+} */
 
 
 /* .acc-hover-2:hover {
