@@ -1,7 +1,7 @@
 
 'use client'
 
-import React from 'react'
+import React, { useState } from 'react'
 import { Col, Container, Image } from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel';
 
@@ -29,10 +29,13 @@ const SliderBanner = () => {
         backgroundPosition: 'center'
     }
 
+
+
+
     return (
         <>
             <Container fluid className='p-0 pt-4 text-center' style={{ height: '800px', }}>
-                <Carousel >
+                <Carousel>
                     <Carousel.Item className='bg-black ' style={BannerImg}>
                         <Carousel.Caption className='w-100 p-0'>
                             <Col className='text-center w-100 position-relative d-flex' style={{ height: 760, }}>

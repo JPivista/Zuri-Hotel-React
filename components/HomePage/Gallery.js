@@ -2,20 +2,42 @@ import React, { useState } from 'react'
 import { Button, Col, Container, Image, Row } from 'react-bootstrap'
 import './home-slider.css'
 
+
 const Gallery = () => {
 
-    const [showText, setShowText] = useState(false)
+    const [width, setWidth] = useState('10%');
+    const [width1, setWidth1] = useState('10%');
+    const [width2, setWidth2] = useState('10%');
 
-    function handleEvent(e) {
-        e.target.style.background = 'red';
-        e.target.style.width = e.target.clientWidth > 100 ? '80%' : '10%';
+
+    const handleMouseOver = () => {
+        if (handleMouseOver) {
+            setWidth('80%');
+        } else if (handleMouseOver1) {
+            setWidth1('10%')
+        } else if (handleMouseOver2) {
+            setWidth2('10%')
+        }
+
     }
-
-    function handleEvent2(e) {
-        e.target.style.background = 'orange';
-        e.target.style.width = e.target.clientWidth > 100 ? '80%' : '10%';
+    const handleMouseOver1 = () => {
+        if (handleMouseOver) {
+            setWidth('10%');
+        } else if (handleMouseOver1) {
+            setWidth1('80%')
+        } else if (handleMouseOver2) {
+            setWidth2('10%')
+        }
     }
-
+    const handleMouseOver2 = () => {
+        if (handleMouseOver) {
+            setWidth('10%');
+        } else if (handleMouseOver1) {
+            setWidth1('10%');
+        } else if (handleMouseOver2) {
+            setWidth2('80%');
+        }
+    }
 
     return (
         <>
@@ -25,18 +47,26 @@ const Gallery = () => {
                     <Image src='/cl.png' alt='' fluid />
                     <h6 className='py-2'>GALLERY</h6>
                 </Col>
+                <div className="container1">
+                    <div onMouseOver={handleMouseOver}
+                        style={{ width: width }}
+                    >
+                        Row 1
+                    </div>
+                    <div onMouseOver={handleMouseOver1}
+                        style={{ width: width1 }}
+                    >
+                        Row 2
+                    </div>
+                    <div
+                        onMouseOver={handleMouseOver1}
+                        style={{ width: width2 }}
+                    >
+                        Row 3
+                    </div>
+                </div>
 
-                <Row className='accordin-main'>
-                    <Col className='bg-danger  accordion-item' onMouseOver={handleEvent} md={1}>
-                        <p>test1</p>
-                    </Col>
-                    <Col className='bg-info accordion-item' onMouseOver={handleEvent2} md={1}>
-                        <p>test2</p>
-                    </Col>
-                    <Col className='bg-black accordion-item' md={1}>
-                        <p>test3</p>
-                    </Col>
-                </Row>
+
                 {/* <Row className='accordin-main' onMouseEnter={handleMouseHover}>
                     <Col className='bg-danger accordion-item acc-hover-1' md={1}>
                         <p>test</p>

@@ -77,7 +77,7 @@ const SharedSlider = () => {
 
     return (
         <>
-            <Container className='p-0 text-center py-2 px-md-5'>
+            <Container className='p-0 text-center py-2 px-md-5 pb-5'>
                 <Col className=''>
                     <Col className=''>
 
@@ -85,14 +85,12 @@ const SharedSlider = () => {
                         <h6 className='py-2 pt-4 text-center'>RESTAURANTS</h6>
                     </Col>
 
-
                     <Carousel className=''
                         responsive={responsive}
                         removeArrowOnDeviceType={["tablet", "desktop"]}
                         swipeable={false}
                         draggable={false}
                         showDots={true}
-
                     >
                         <Col className='text-center d-flex flex-column align-items-center gap-4 ps-lg-5 ms-lg-5' >
                             <Image src='/kumarkom/restarents/limetree_circle_img.jpg' alt='' roundedCircle width={180} height={180}

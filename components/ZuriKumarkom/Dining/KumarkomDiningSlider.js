@@ -77,7 +77,7 @@ const KumarkomDiningSlider = () => {
 
     return (
         <>
-            <Container className='p-0 pt-4 text-center px-md-5' style={{}}>
+            <Container className='p-0 pt-4 text-center px-md-5 pb-5' style={{}}>
 
                 <Image src='/cl.png' alt='' fluid />
                 <h6 className='py-2 pt-4 text-center'>RESTAURANTS AT THE ZURI KUMARAKOM</h6>

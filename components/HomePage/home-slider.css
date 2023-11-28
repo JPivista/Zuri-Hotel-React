@@ -71,3 +71,25 @@
     width: 100%;
 } */
 
+
+.container1 {
+    display: flex;
+  }
+
+.row1 {
+    height: 50px; /* Adjust as needed */
+    border: 1px solid #ccc;
+    transition: width 0.3s ease;
+    overflow: hidden;
+  }
+  
+  .row1.active {
+    width: 80%;
+  }
+  /* This is a basic example, and you might need to adapt it based on your specific requirements and styling preferences. If you have a more complex layout or additional features, the code might need further adjustments. */
+  
+  
+  
+  
+  
+  

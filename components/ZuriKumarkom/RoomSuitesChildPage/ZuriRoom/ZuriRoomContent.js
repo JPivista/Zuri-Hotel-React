@@ -16,7 +16,7 @@ const ZuriRoomContent = () => {
 
     return (
         <>
-            <Container className='p-0 py-4 text-center'>
+            <Container className='p-0 py-4 text-center '>
                 <Image src='/cl.png' alt='' fluid />
                 <h6 className='py-2 text-center'>ZURI ROOM</h6>
 
