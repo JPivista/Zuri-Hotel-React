@@ -106,7 +106,7 @@ const RoomSuitesSlider = () => {
     return (
 
         <>
-            <Container className='p-0 px-md-5' style={{}}>
+            <Container className='p-0 px-md-5 pb-5' style={{}}>
                 <Carousel className=''
                     responsive={responsive}
                     removeArrowOnDeviceType={["tablet", "desktop"]}

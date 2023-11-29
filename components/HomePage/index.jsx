@@ -3,8 +3,8 @@
 import React from 'react'
 import MainHome from './MainHome'
 
-import Header  from '../Shared/Header/Navbar'
-import Footer from '../Shared/Footer/Footer'
+import Header from '../Shared/Header'
+import Footer from '../Shared/Footer'
 import SliderBanner from './SliderBanner'
 
 import '../Style'
@@ -16,13 +16,13 @@ const index = () => {
   return (
     <>
 
-    <Header />
-    <SliderBanner />
-    <MainHome />
-    <PropertiesSlider />
-    <HomeOffers />
-    <Gallery />
-    <Footer />
+      <Header />
+      <SliderBanner />
+      <MainHome />
+      <PropertiesSlider />
+      <HomeOffers />
+      <Gallery />
+      <Footer />
     </>
   )
 }
