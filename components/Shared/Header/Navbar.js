@@ -19,7 +19,7 @@ function Header() {
 
     return (
         <>
-            <Navbar collapseOnSelect expand="lg" className="bg-white position-fixed w-100 z-3 d-md-none d-block top-0">
+            {/* <Navbar collapseOnSelect expand="lg" className="bg-white position-fixed w-100 z-3 d-md-none d-block top-0">
                 <Container>
                     <Navbar.Brand href="#home">
                         <Image src='/zuri_logo.png' alt='' />
@@ -50,7 +50,7 @@ function Header() {
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
-            </Navbar>
+            </Navbar> */}
 
 
             {/* Desktop Header */}
